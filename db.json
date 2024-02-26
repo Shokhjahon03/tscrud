@@ -1,0 +1,62 @@
+{
+  "students": [
+    {
+      "id": "46138",
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "johndoe@gmail.com",
+      "group": "React N32"
+    },
+    {
+      "id": "461386",
+      "name": "sijudhf",
+      "username": "john",
+      "email": "johndoe@gmail.com",
+      "group": "React N32"
+    },
+    {
+      "id": "461385",
+      "name": "wkjefkn",
+      "username": "doe",
+      "email": "johndoe@gmail.com",
+      "group": "React N32"
+    },
+    {
+      "id": "461384",
+      "name": "wlkefwkd",
+      "username": "jodoe",
+      "email": "johndoe@gmail.com",
+      "group": "React N32"
+    },
+    {
+      "id": "84c8",
+      "name": "wefw",
+      "email": "wefew",
+      "group": "fefe",
+      "username": "fewfe"
+    },
+    {
+      "id": "bfb5",
+      "name": "efd3",
+      "email": "f3r",
+      "group": "fwerfe",
+      "username": "d3"
+    },
+    {
+      "id": "03cb",
+      "name": "wdlkm",
+      "email": "cf",
+      "group": "lckme",
+      "username": "ewdkmn "
+    }
+  ],
+  "teachers": [
+    {
+      "id": "412453",
+      "name": "Tom Smith",
+      "username": "tomsmith",
+      "email": "tomsmith@gmail.com",
+      "level": "senior"
+    }
+  ]
+}
