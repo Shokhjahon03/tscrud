@@ -8,13 +8,12 @@ import Profile from './pages/Profile';
 import DashSidebar from './components/DashSidebar';
 import Students from './pages/Students';
 import Teachers from './pages/Teachers';
-import Regester from './pages/Regester';
 
 const App = () => {
   // let uservalues:object=JSON.parse(localStorage.getItem('val'))
   return (
     <Router>
-      {/* <div className="flex w-full min-h-screen">
+      <div className="flex w-full min-h-screen">
         <DashSidebar />
         <div className="w-full">
           <Header />
@@ -28,10 +27,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-      </div> */}
-      <Routes>
-        <Route path='/log' element={<Regester/>}/>
-      </Routes>
+      </div>
     </Router>
   );
 };
