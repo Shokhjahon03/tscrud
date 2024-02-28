@@ -1,5 +1,5 @@
 import { Avatar, Button, Dropdown, Navbar } from 'flowbite-react';
-import { CgProfile } from 'react-icons/cg';
+// import { CgProfile } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

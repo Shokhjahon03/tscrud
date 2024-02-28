@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 const Students = () => {
-  const { loading, error, students, getStudents,AddUsers,DaletUser,Getiduser,idUser,saves} = useStudent();
+  const { loading, error, students, getStudents,AddUsers,DaletUser,Getiduser,idUser} = useStudent();
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
   let [a,setA]=useState(true)
@@ -48,7 +48,7 @@ const Students = () => {
     setOpenModal2(true)
     Getiduser(id)
     console.log(id);
-    setEditval(idUser)
+    // setEditval(idUser)
     console.log(idUser);
     console.log(editsval);
     
@@ -66,7 +66,7 @@ let Dali=(id:string):void=>{
 }
 let savevales=():void=>{
   setOpenModal2(false)
-  saves(editsval.id,editsval)
+  // saves(editsval.id,editsval)
   setA(!a)
 }
 
