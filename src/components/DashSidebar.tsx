@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdCastForEducation } from 'react-icons/md';
 import { HiChartPie, HiUsers } from 'react-icons/hi';
 import { HiMiniUsers } from 'react-icons/hi2';
-
+import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 const DashSidebar = () => {
   return (
     <div>
@@ -34,6 +34,11 @@ const DashSidebar = () => {
                 Teachers
               </Sidebar.Item>
             </Link>
+            <Flowbite>
+      ...
+      <DarkThemeToggle />
+      ...
+    </Flowbite>
           </Sidebar.ItemGroup>
         </Sidebar.Items>
       </Sidebar>

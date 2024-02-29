@@ -8,12 +8,31 @@ import Profile from './pages/Profile';
 import DashSidebar from './components/DashSidebar';
 import Students from './pages/Students';
 import Teachers from './pages/Teachers';
+import Regester from './pages/Regester';
+import { useState } from 'react';
 
 const App = () => {
-  // let uservalues:object=JSON.parse(localStorage.getItem('val'))
+let [uservalues,setuser]=useState<boolean>(false)
   return (
     <Router>
-      <div className="flex w-full min-h-screen">
+{
+  uservalues?<div className="flex w-full min-h-screen">
+  <DashSidebar />
+  <div className="w-full">
+    <Header />
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="students" element={<Students />} />
+      <Route path="teachers" element={<Teachers />} />
+      <Route path="register" element={<Register />} />
+      <Route path="login" element={<Login />} />
+      <Route path="profile" element={<Profile />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </div>
+</div>: <Regester setuser={setuser}/>
+}
+      {/* <div className="flex w-full min-h-screen">
         <DashSidebar />
         <div className="w-full">
           <Header />
@@ -27,7 +46,9 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-      </div>
+      </div> */}
+      {/* <Regester/> */}
+      
     </Router>
   );
 };

@@ -116,7 +116,7 @@ let savevales=():void=>{
         </Table>
         : null}
       {error ? <h2>{error.message}</h2> : null}
-      <Button className='mt-[50px]' onClick={() => setOpenModal(true)}>Add User</Button>
+      <Button className='mt-[50px] absolute top-[250px] left-[20px]' onClick={() => setOpenModal(true)}>Add User</Button>
       <Modal show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>Add User</Modal.Header>
         <Modal.Body>
@@ -153,6 +153,7 @@ let savevales=():void=>{
           </Button>
         </Modal.Footer>
       </Modal>
+      
     </div>
   );
 };
